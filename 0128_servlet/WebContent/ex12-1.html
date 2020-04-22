@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function grade_go(g) {
+		g.action = "ex12-2.html";
+		g.submit();
+	}
+	function calc_go(c) {
+		c.action = "ex12-3.html";
+		c.submit();
+	}
+	function salary_go(s) {
+		s.action = "ex12-4.html";
+		s.submit();
+	}
+</script>
+</head>
+
+<body>
+	<form name="g" method="post">
+		<input type="button" value="성적 구하기" onclick="grade_go(g)">
+	</form>
+	<form name="c" method="post">
+		<input type="button" value="사칙연산 구하기" onclick="calc_go(c)">
+	</form>
+	<form name="s" method="post">
+		<input type="button" value="급여 구하기" onclick="salary_go(s)">
+	</form>
+</body>
+</html>

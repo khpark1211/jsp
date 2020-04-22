@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ict.db.mapper">
+	
+	<!-- 전체보기  -->
+	<select id="list" resultType="com.ict.db.VO">
+		select * from employees order by employee_id
+	</select>
+	
+	<!-- 부서보기 -->
+	<select id="d_list" parameterType="String" resultType="com.ict.db.VO">
+		select * from employees where department_id = #{deptno}
+	</select>
+	
+	<!-- dynamic list -->
+	<select id="dy_list" parameterType="Map" resultType="com.ict.db.VO">
+		<!-- 
+		select * from employees where employee_id = #{keyword}  
+		select * from employees where first_name = #{keyword}  
+		select * from employees where job_id = #{keyword} 
+		select * from employees where department_id = #{keyword}
+		 -->
+		 select * from employees 
+		 <choose>
+		 	<when test="idx == 1"> where Lower(employee_id) = Lower(#{keyword}) </when>
+		 	<when test="idx == 2"> where Lower(first_name) like '%' || Lower(#{keyword}) || '%' </when>
+		 	<when test="idx == 3"> where Lower(job_id) like '%' || Lower(#{keyword}) || '%' </when>
+		 	<when test="idx == 4"> where Lower(department_id) = Lower(#{keyword}) </when>
+		 </choose>
+	</select>
+</mapper>
+
+
+
+
+
+
+
+

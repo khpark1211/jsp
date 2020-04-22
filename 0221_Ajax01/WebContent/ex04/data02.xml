@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+	<product name ="흰우유" price="950" />
+	<product name ="탄산음료" price="1100" />
+	<product name ="아메리카노" price="1500" />
+	<product name ="작은 물" price="500" />	
+</products>

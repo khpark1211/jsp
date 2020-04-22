@@ -1,0 +1,33 @@
+1. 다운로드 받는다. : https://blog.mybatis.org/p/products.html
+2. 압축해제 한다 : jar 파일을 WEB-INF안에 lib 폴더에 넣어준다.
+3. 자바영역에서 3개의 클래스 파일 과 2 개의 xml 파일을 만든다.
+   - VO, DAO, DBService, config.xml, mapper.xml
+   
+   - VO(ValueObject) : 객체 정보(DB컬럼과 파라미터값)를 담는 객체
+   
+   - DAO(Data Access Object) : DB를 사용해 데이터를 조회하거나 조작하는 기능 전담하는 객체
+   
+   - config.xml : 오라클에 접근할 수 있도록 하는 환경 설정과  
+                                    실제 DB처리해서 결과를 얻어내는 mapper.xml의 위치를 지정해 주는 환경 설정  
+   
+   - mapper.xml : 실제 DB처리 하는  SQL 구문을  넣는 곳 , 결과를 얻어낼 수 있다.
+     ** id= "외부에서 호출하는 이름,   resultType="결과정보 타입"
+        parameterType = "입력할 정보 타입"
+     ** <select id=""  parameterType=""  resultType=""> 
+     		실제 사용하는 쿼리 ( ? 대신 #{} ) 
+     	</select>
+     	
+     ** <update id="" parameterType="">실제 사용하는 쿼리 ( ? 대신 #{} )</update> 
+     	<insert id="" parameterType="">실제 사용하는 쿼리 ( ? 대신 #{} )</insert> 
+     	<delete id="" parameterType=""> 실제 사용하는 쿼리 ( ? 대신 #{} )</delete> 	
+                                    
+   - DBService : config.xml 파일을 읽어서 MyBatis를 사용할 수 있도록 해주는 환경 설정
+                 이유 ) DAO 에서 최종적으로 사용할 SqlSession 객체를 만든것이 목적
+              SqlSession이란 MyBatis에서  mapper.xml를 사용있도록 만든 클래스  
+   
+   
+   
+   
+   
+   
+    

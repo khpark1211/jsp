@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;0131_jsp/WebContent/ex01.jsp&apos; to &apos;ex01_directive.jsp&apos;" description="Rename resource &apos;ex01.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/ex01.jsp" name="ex01_directive.jsp" stamp="1580435578902" updateReferences="true"/>
+</session>

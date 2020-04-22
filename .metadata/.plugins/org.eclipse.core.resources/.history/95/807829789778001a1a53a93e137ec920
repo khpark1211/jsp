@@ -1,0 +1,79 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#mb-sidebar {
+	width: 200px;
+	padding-left: 10px;
+	height: 1000px;
+	float: left;
+	border: 1px solid none;
+	background-color: tomato;
+}
+
+#mb-content {
+	width: 800px;
+	min-height: 1000px;
+	float: left;
+	margin-left: 90px;
+}
+
+#mb-sidebar {
+	list-style-type: none;
+}
+
+
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+$( function() {
+    $( "#accordion" ).accordion();
+  } );
+</script>
+</head>
+<body>
+	<div id="mb-container">
+		
+			<!-- 메뉴 -->
+			<div id="accordion">
+					<h3>Movie World</h3>
+						<div>
+							<p>공지사항</p>
+							<p></p>
+						</div>
+					<h3 class="topMenuLi">영화</h3>
+						<div>
+							<p>현재 상영작</p>
+							<p>상영 예정작</p>
+							<p>영화 예매</p>
+						</div>
+					<h3 class="topMenuLi">평점 & 리뷰</h3>
+					
+					<h3 class="topMenu">다운로드</h3>
+						<div>
+							<p>이 달의 추천 영화</p>
+							<p>인기 top 10</p>
+							<p>시리즈 영화 할인</p>
+							<p>장르별 영화관</p>
+						</div>
+					<h3 class="topMenuLi">이벤트</h3>
+						<div>
+							<p>....</p>
+						</div>
+					<h3 class="topMenuLi">온라인 고객센터</h3>
+						<div>
+							<p>FAQ</p>
+							<p>1:1 문의하기</p>
+						<div>
+			</div>
+		
+	</div>
+</body>
+</html>

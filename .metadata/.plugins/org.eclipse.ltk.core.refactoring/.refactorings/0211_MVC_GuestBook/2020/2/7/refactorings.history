@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;0211_MVC_GuestBook/WebContent/view/index.jsp&apos; to &apos;list.jsp&apos;" description="Rename resource &apos;index.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/view/index.jsp" name="list.jsp" stamp="1581307615513" updateReferences="true"/>
+</session>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ip_go() {
+		location.href = "/0128_servlet/Ex11?param=1";
+	}
+	function date_go() {
+		location.href = "/0128_servlet/Ex11?param=2";
+	}
+	function data_go2(f) {
+		f.action="/0128_servlet/Ex11?param=3";
+		f.submit();
+	}
+</script>
+</head>
+<body>
+	<button onclick="ip_go()">IP 구하기</button><br>
+	<button onclick="date_go()">오늘 날짜 구하기</button><br>
+	<form method="post">
+		<input type="button" value="오늘 운수 구하기 " onclick="data_go2(this.form)">
+	</form>
+	 <a href="/0128_servlet/Ex11?param=4">이름 구하기</><br> 
+</body>
+</html>

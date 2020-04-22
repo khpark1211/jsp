@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;0211_MVC_GuestBook2/WebContent/update&apos; to &apos;upload&apos;" description="Rename resource &apos;update&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/update" name="upload" stamp="1581388697108" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;0211_MVC_GuestBook2/WebContent/view/index.jsp&apos; to &apos;list.jsp&apos;" description="Rename resource &apos;index.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/view/index.jsp" name="list.jsp" stamp="1581388734721" updateReferences="true"/>
+</session>

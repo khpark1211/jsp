@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<script type="text/javascript">
+	function send_go(f) {
+		if (f.su1.value == "") {
+			alert("수1을 입력하세요");
+			f.su1.focus();
+			return;
+		}
+
+		var select = f.op;
+		if (select[0].selected == true) {
+			alert("연산자를 선택해주세요")
+			return;
+		}
+
+		if (f.su2.value == "") {
+			alert("수2를 입력하세요");
+			f.su2.focus();
+			return;
+		} else {
+			if (f.su2.value == 0 && select[4].selected == true) {
+				alert("0으로는 나눌 수 없습니다");
+				return;
+			}
+		}
+		f.action = "/0128_servlet/Ex12?param=2";
+		f.submit();
+	}
+</script>
+</head>
+
+<body>
+	<form method="post">
+		<p>
+			수1 : <input type="number" name="su1"> 
+				 <select name="op">
+						<option>선택하세요</option>
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+			     </select> 
+			수2 : <input type="number" name="su2">
+		</p>
+		<input type="button" value="계산" onclick="send_go(this.form)">
+	</form>
+</body>
+
+</html>

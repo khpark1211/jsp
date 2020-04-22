@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="model.Play01"/>
+<fullyQualifiedTypeName name="model.Play02"/>
+<fullyQualifiedTypeName name="model.Play03"/>
+<fullyQualifiedTypeName name="model.Play04"/>
+<fullyQualifiedTypeName name="model2.Play"/>
+<fullyQualifiedTypeName name="model2.Play01Com"/>
+<fullyQualifiedTypeName name="model2.Play02Com"/>
+<fullyQualifiedTypeName name="model2.Play03Com"/>
+<fullyQualifiedTypeName name="model2.Play04Com"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="model3.Command"/>
+<fullyQualifiedTypeName name="model3.G_Command"/>
+<fullyQualifiedTypeName name="model3.C_Command"/>
+<fullyQualifiedTypeName name="model3.S_Command"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="com.ict.edu.VO"/>
+<fullyQualifiedTypeName name="com.ict.model.Hi"/>
+<fullyQualifiedTypeName name="com.ict.model.Hello"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.lang.Byte"/>
+<fullyQualifiedTypeName name="com.ict.model.Bye"/>
+<fullyQualifiedTypeName name="com.ict.model.MyModel"/>
+<fullyQualifiedTypeName name="com.ict.model.HiCommand"/>
+<fullyQualifiedTypeName name="com.ict.model.HelloCommand"/>
+<fullyQualifiedTypeName name="com.ict.model.ByeCommand"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="com.ict.model.Command"/>
+<fullyQualifiedTypeName name="com.ict.model.ListCommand"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ict.jdbc.VO"/>
+<fullyQualifiedTypeName name="com.ict.jdbc.DAO"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+</qualifiedTypeNameHistroy>

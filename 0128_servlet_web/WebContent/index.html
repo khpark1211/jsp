@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function simple_go(f) {
+		f.action="/0128_servlet_web/simple";
+		f.submit();
+	}
+	function welcome_go(f) {
+		f.action="/0128_servlet_web/hi";
+		f.submit();
+	}
+</script>
+</head>
+<body>
+	<form method="post">
+	    <input type="button" value="simple" onclick="simple_go(this.form)">
+	    <input type="button" value="welcome" onclick="welcome_go(this.form)">
+	</form>
+</body>
+</html>

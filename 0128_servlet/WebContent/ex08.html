@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<script type="text/javascript">
+	function login_go(f) {
+		f.action="/0128_servlet/Ex08";
+		f.submit();
+	}
+</script>
+</head>
+<body>
+	<form method="post">
+		<p> ID : <input type="text" name="id"></p>
+		<p> PW : <input type="password" name="pw"></p>
+		<input type="button" value="로그인" onclick="login_go(this.form)">
+	</form>
+</body>
+</html>

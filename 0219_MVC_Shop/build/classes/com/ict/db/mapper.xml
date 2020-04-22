@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ict.db.mapper">
+	<!-- 로그인 -->
+	<select id="login" parameterType="com.ict.db.MVO" resultType="com.ict.db.MVO">
+		select * from members where id = #{id} and pw = #{pw}
+	</select>
+	
+	<!-- 리스트  -->
+	<select id="list" parameterType="String" resultType="com.ict.db.VO">
+		select * from shop_t where category = #{category}
+	</select>
+	
+	<!-- 상품 상세 정보 -->
+	<select id="onelist" parameterType="String" resultType="com.ict.db.VO">
+		select * from shop_t where idx = #{idx}
+	</select>
+	
+	<!-- id와 제품번호를 이용해서 카드에 해당 제품이 있는지 검사 -->
+	<select id="cartList" parameterType="Map" resultType="com.ict.db.CVO">
+		select * from cart where id=#{id} and p_num = #{p_num}
+	</select>
+	
+	<insert id="cartInsert" parameterType="com.ict.db.CVO">
+		insert into cart values(cart_seq.nextval, #{p_num}, #{p_name}, #{p_price}, 1, #{id})
+	</insert>
+	
+	<update id="cartUpdate" parameterType="com.ict.db.CVO">
+		update cart set p_su = p_su + 1 where id=#{id} and p_num=#{p_num}
+	</update>
+	
+	<select id="cartList2" parameterType="String" resultType="com.ict.db.CVO">
+		select * from cart where id = #{id}
+	</select>
+	
+	<update id="cartUpdate2" parameterType="com.ict.db.CVO">
+		update cart set p_su=#{p_su} where id=#{id} and p_num=#{p_num}
+	</update>
+	
+	<delete id="cartdel" parameterType="Map">
+		delete from cart where id=#{id} and p_num=#{p_num}
+	</delete>
+	
+	<insert id="add" parameterType="com.ict.db.VO">
+		insert into shop_t values(shop_seq.nextval, #{category}, #{p_num},#{p_name},
+		#{p_company},#{p_price},#{p_saleprice},#{p_image_s}, #{p_image_l},#{p_content}, sysdate)
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+

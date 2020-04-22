@@ -1,0 +1,8 @@
+127.0.0.1 - - [06/Apr/2020:14:45:32 +0900] "GET / HTTP/1.1" 404 754
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:45:34 +0900] "GET /0228_KakaoLogin_MVC/index.jsp HTTP/1.1" 200 462
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:45:34 +0900] "GET /0228_KakaoLogin_MVC/img/kakao_login_btn_medium_narrow.png HTTP/1.1" 200 2661
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:45:36 +0900] "GET /login?code=BWeCIjDkwl6JinJUk-UkQI3M-UpwVL7izk2Gf1csdZ6vnj8AuuYwqPS_pv8897Xzmg4nqwo9dRoAAAFxTgXRRw HTTP/1.1" 404 754
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:46:08 +0900] "GET /login?code=QhzFsyb87wB1OEqhUUWhDt3lUBqxX20WoBGL1NrH9bFik1dDHDfCOkkthr9Xs6YkZE5zFgo9dNkAAAFxTgZLKQ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:46:08 +0900] "GET /result.jsp HTTP/1.1" 200 826
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:46:08 +0900] "GET /js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+0:0:0:0:0:0:0:1 - - [06/Apr/2020:14:46:08 +0900] "POST /member HTTP/1.1" 200 89

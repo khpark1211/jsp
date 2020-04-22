@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+	<product>
+		<name>흰우유</name>
+		<price>950</price>
+	</product>
+	<product>
+		<name>탄산음료</name>
+		<price>1100</price>
+	</product>
+	<product>
+		<name>아메리카노</name>
+		<price>1500</price>
+	</product>
+	<product>
+		<name>작은 물</name>
+		<price>500</price>
+	</product>
+</products>

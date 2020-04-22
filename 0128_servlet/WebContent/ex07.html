@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style type="text/css">
+	fieldset { width: 400px; }
+</style>
+<script type="text/javascript">
+	function send_go(f) {
+		if(f.name.value==""){
+			alert("이름을 입력하세요");
+			f.name.focus();
+			return;
+		}
+		if(f.id.value==""){
+			alert("아이디을 입력하세요");
+			f.id.focus();
+			return;
+		}
+		if(f.pw.value==""){
+			alert("비밀번호를  입력하세요");
+			f.pw.focus();
+			return;
+		}
+		
+		if(f.c_pw.value==""){
+			alert("비밀번호확인를  입력하세요");
+			f.pw.focus();
+			return;
+		}else{
+			if(f.pw.value != f.c_pw.value){
+				alert("비밀번호와 비밀번호 확인 다릅니다.")
+				f.pw.value="";
+				f.c_pw.value="";
+				f.pw.focus();
+				return;
+			}
+		}
+		
+		if(f.email.value==""){
+			alert("이메일을  입력하세요");
+			f.email.focus();
+			return;
+		}else{
+			if(f.email.value.indexOf("@") == -1 || f.email.value.indexOf(".") == -1 ){
+				alert("이메일 형식이 아닙니다.");
+				f.email.value="";
+				f.email.focus();
+				return;
+			}
+		}
+		if(!(f.gender.value=="남" || f.gender.value=="여")){
+			alert("성별을 선택하세요");
+			return;
+		}
+		
+		var cnt = 0 ;
+		for (var i = 0; i < f.hobby.length; i++) {
+			if(f.hobby[i].checked == true){
+				cnt ++ ;
+			}
+		}
+		if(cnt == 0){
+			alert("하나 이상의 취미를 선택하세요");
+			return;
+		}
+		
+		f.action="/0128_servlet/Ex07";
+		f.submit();
+	}
+</script>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend> 회원 가입 </legend>
+			<p> 이름 : <input type="text" name="name" placeholder="이름 입력"></p>
+			<p> 아이디 : <input type="text" name="id"></p>
+			<p> 패스워드 : <input type="password" name="pw"></p>
+			<p> 패스워드 확인: <input type="password" name="c_pw"></p>
+			<p> 이메일: <input type="text" name="email"></p>
+			
+			<p> 성별 : <input type="radio" name="gender" value="남">남자
+					 <input type="radio" name="gender" value="여">여자
+            </p>
+            <p> 취미 : <input type="checkbox" name="hobby" value="운동"> 운동
+            		 <input type="checkbox" name="hobby" value="게임"> 게임
+            		 <input type="checkbox" name="hobby" value="영화"> 영화
+            		 <input type="checkbox" name="hobby" value="독서"> 독서
+            </p>	
+            <p>  <input type="button" value="회원가입" onclick="send_go(this.form)"> 
+                 <input type="reset" value="취소">
+            </p>				 
+		</fieldset>
+	</form>
+</body>
+</html>
+
+
+
+
